@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+
+:before, :after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b0cac7;
+}
+
+.head {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.face {
+  width: 250px;
+  height: 250px;
+  background-color: #ffb78e;
+  border: 2px solid #000;
+  border-radius: 70% 65% 12% 90% / 70% 50% 70% 65%;
+  position: absolute;
+}
+
+.face:before {
+  content: "";
+  width: 65px;
+  height: 80px;
+  background-color: #ffb78e;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+  border-radius: 80% 65% 73% 80% / 80% 40% 30% 70%;
+  position: absolute;
+  transform: translate(-60px, 100px)rotate(-10deg);
+}
+
+.face:after {
+  content: "";
+  width: 155px;
+  height: 149px;
+  background-color: #ffb78e;
+  border-right: 3px solid #000;
+  border-radius: 90% 65% 80% 90% / 40% 100% 70% 60%;
+  position: absolute;
+  transform: translate(145px, 98px);
+}
+
+.hair {
+  width: 150px;
+  height: 15px;
+  background-color: #000;
+  border-radius: 45% 65% 0% 100% / 100% 100% 0% 0%;
+  position: absolute;
+  top: -2px;
+  left: 39px;
+}
+
+.hair:before {
+  content: "";
+  width: 100px;
+  height: 140px;
+  z-index: -1;
+  background-color: #000;
+  border-radius: 100% 0% 0% 100% / 100% 0%;
+  position: absolute;
+  top: -5px;
+  left: -50px;
+  transform: rotate(19deg);
+}
+
+.eyebrowLeft {
+  width: 67px;
+  height: 25px;
+  background-color: #000;
+  border-radius: 30px;
+  animation: .4s ease-in-out infinite wave;
+  position: absolute;
+  top: 12px;
+  left: 9px;
+  transform: rotate(137deg);
+}
+
+.eyebrowLeft:after {
+  content: "";
+  width: 67px;
+  height: 25px;
+  background-color: #000;
+  border-radius: 30px;
+  position: absolute;
+  top: -24px;
+  right: 25px;
+  transform: rotate(85deg);
+}
+
+.eyebrowRight {
+  width: 67px;
+  height: 25px;
+  background-color: #000;
+  border-radius: 30px;
+  animation: .4s ease-in-out infinite wave;
+  position: absolute;
+  top: 12px;
+  left: 130px;
+  transform: rotate(137deg);
+}
+
+.eyebrowRight:after {
+  content: "";
+  width: 67px;
+  height: 25px;
+  background-color: #000;
+  border-radius: 30px;
+  position: absolute;
+  top: -24px;
+  right: 25px;
+  transform: rotate(85deg);
+}
+
+@keyframes wave {
+  to {
+    top: -.01px;
+  }
+}
+
+.eyeLeft {
+  width: 68px;
+  height: 60px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  left: 43px;
+}
+
+.eyeLeft:before {
+  content: "";
+  width: 80px;
+  height: 60px;
+  border-top: 4px solid #000;
+  border-radius: 53% 47% 45% 55% / 57% 36% 64% 43%;
+  position: absolute;
+  top: -25px;
+  left: -15px;
+}
+
+.eyeLeft:after {
+  content: "";
+  width: 26px;
+  height: 23px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 16px;
+  left: 20px;
+}
+
+.eyeRight {
+  width: 68px;
+  height: 60px;
+  z-index: 2;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  left: 143px;
+}
+
+.eyeRight:before {
+  content: "";
+  width: 80px;
+  height: 60px;
+  border-top: 4px solid #000;
+  border-radius: 53% 47% 45% 55% / 38% 52% 48% 66%;
+  position: absolute;
+  top: -25px;
+  left: -2px;
+}
+
+.eyeRight:after {
+  content: "";
+  width: 26px;
+  height: 23px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 16px;
+  left: 20px;
+}
+
+.mouth {
+  width: 45px;
+  height: 60px;
+  z-index: 2;
+  background-color: #a54354;
+  border: 2px solid #000;
+  border-radius: 50%;
+  animation: 2s ease-in-out infinite move;
+  position: absolute;
+  top: 205px;
+  right: 50px;
+}
+
+@keyframes move {
+  0% {
+    transform: scale(.3, .5);
+  }
+
+  10% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(.3, .5);
+  }
+
+  30% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(.3, .7);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(.8, .3);
+  }
+
+  100% {
+    transform: scale(.5, .9);
+  }
+}
+
+/*# sourceMappingURL=index.0357d1a4.css.map */
